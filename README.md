@@ -33,7 +33,7 @@ El dataset original presentaba un severo desbalance, con muy pocos registros de 
 ### 2. Limpieza de Datos (Interpolación Temporal)
 Se detectó ~20% de nulos en variables críticas. En lugar de eliminar registros, utilizamos interpolación lineal basada en el tiempo para reconstruir la continuidad climática.
 
-![Limpieza de Datos CO](CO_limpieza.png)
+![Limpieza de Datos CO](Codigos/graficos_limpieza/CO_limpieza.png)
 *(Línea azul: Datos recuperados por interpolación | Puntos rojos: Datos originales)*
 
 ### 3. Reducción de Dimensionalidad (PCA)
