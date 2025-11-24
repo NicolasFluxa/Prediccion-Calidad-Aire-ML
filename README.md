@@ -56,8 +56,8 @@ El dataset unificado consta de **49,703 registros** horarios con 11 variables pr
 
 ## ✒️ Autores
 
-* **[Tu Nombre Completo]** - *Desarrollo y Modelado*
-* **[Nombre de tu compañero si aplica]**
+* **[Nicolás Fluxá Morán]** - *Desarrollo y Modelado*
+* **[Felipe Arevalo Galaz]**
 
 ---
 *Proyecto realizado para la asignatura de Machine Learning - 2025.*
