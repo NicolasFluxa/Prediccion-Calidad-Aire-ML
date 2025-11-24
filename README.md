@@ -39,7 +39,7 @@ Se detectó ~20% de nulos en variables críticas. En lugar de eliminar registros
 ### 3. Reducción de Dimensionalidad (PCA)
 El análisis de componentes principales (PCA) confirmó la alta redundancia entre los gases nitrogenados (NO, NO2, NOx), permitiendo simplificar el análisis.
 
-![Análisis PCA Gases](Codigos/graficos_limpieza/analisis_pca_gases.jpg)
+![Análisis PCA Gases](Codigos/graficos_limpieza/analisis_pca_gases.png)
 
 ### 4. Solución: Balanceo con SMOTE
 Aplicamos SMOTE (Synthetic Minority Over-sampling Technique) exclusivamente al set de entrenamiento para igualar la representación de todas las clases.
@@ -59,7 +59,7 @@ Tras comparar Random Forest, KNN y XGBoost, seleccionamos **XGBoost** por su efi
 ### Curvas ROC Comparativas
 Ambos modelos líderes mostraron un excelente desempeño (AUC ~0.98), pero XGBoost ofrece mayor velocidad de inferencia.
 
-![Curvas ROC Comparativas](Codigos/graficos_limpieza/curvas_roc_comparativas.png)
+![Curvas ROC Comparativas](Codigos/graficos_limpieza/comparacion_curvas_roc.png)
 
 ### Interpretabilidad del Modelo
 El análisis de importancia de variables reveló que **PM10** es el predictor dominante, validando la coherencia física del modelo (correlación entre partículas gruesas y finas).
@@ -72,7 +72,7 @@ El análisis de importancia de variables reveló que **PM10** es el predictor do
 
 1.  Clonar el repositorio:
     ```bash
-    git clone [https://github.com/NicolasFluxa/Prediccion-Calidad-Aire-ML.git](https://github.com/NicolasFluxa/Prediccion-Calidad-Aire-ML.git)
+    git clone [https://github.com/NicolasFluxa/Prediccion-Calidad-Aire-ML.git]
     ```
 2.  Instalar dependencias:
     ```bash
