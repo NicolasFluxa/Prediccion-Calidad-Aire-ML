@@ -28,7 +28,7 @@ El flujo de trabajo se divide en 5 notebooks secuenciales:
 ### 1. El Desafío: Desbalance de Clases
 El dataset original presentaba un severo desbalance, con muy pocos registros de emergencias ambientales ("Muy Malo"). Entrenar así habría sesgado el modelo.
 
-![Distribución Original del Target](distribucion_clases_target.png)
+![Distribución Original del Target](Codigos/graficos_limpieza/distribucion_clases_target.png)
 
 ### 2. Limpieza de Datos (Interpolación Temporal)
 Se detectó ~20% de nulos en variables críticas. En lugar de eliminar registros, utilizamos interpolación lineal basada en el tiempo para reconstruir la continuidad climática.
@@ -39,12 +39,12 @@ Se detectó ~20% de nulos en variables críticas. En lugar de eliminar registros
 ### 3. Reducción de Dimensionalidad (PCA)
 El análisis de componentes principales (PCA) confirmó la alta redundancia entre los gases nitrogenados (NO, NO2, NOx), permitiendo simplificar el análisis.
 
-![Análisis PCA Gases](analisis_pca_gases.jpg)
+![Análisis PCA Gases](Codigos/graficos_limpieza/analisis_pca_gases.jpg)
 
 ### 4. Solución: Balanceo con SMOTE
 Aplicamos SMOTE (Synthetic Minority Over-sampling Technique) exclusivamente al set de entrenamiento para igualar la representación de todas las clases.
 
-![Comparativa Balanceo SMOTE](balanceo_smote_comparativo.png)
+![Comparativa Balanceo SMOTE](Codigos/graficos_limpieza/balanceo_smote_comparativo.png)
 
 ---
 
@@ -59,12 +59,12 @@ Tras comparar Random Forest, KNN y XGBoost, seleccionamos **XGBoost** por su efi
 ### Curvas ROC Comparativas
 Ambos modelos líderes mostraron un excelente desempeño (AUC ~0.98), pero XGBoost ofrece mayor velocidad de inferencia.
 
-![Curvas ROC Comparativas](curvas_roc_comparativas.png)
+![Curvas ROC Comparativas](Codigos/graficos_limpieza/curvas_roc_comparativas.png)
 
 ### Interpretabilidad del Modelo
 El análisis de importancia de variables reveló que **PM10** es el predictor dominante, validando la coherencia física del modelo (correlación entre partículas gruesas y finas).
 
-![Feature Importance XGBoost](importancia_variables_xgboost.png)
+![Feature Importance XGBoost](Codigos/graficos_limpieza/importancia_variables_xgboost.png)
 
 ---
 
