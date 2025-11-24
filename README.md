@@ -34,8 +34,6 @@ El modelo seleccionado fue **XGBoost** debido a su eficiencia y capacidad de gen
     * *Interpretación:* El modelo es capaz de detectar el 97% de los eventos críticos reales, priorizando la salud pública.
 * **Variable más influyente:** PM10 (validando la correlación física con PM2.5).
 
-![Curvas ROC](curvas_roc_comparativas.png)
-*(Curvas ROC mostrando un AUC promedio de ~0.98)*
 
 ## 🛠️ Instalación y Requisitos
 
